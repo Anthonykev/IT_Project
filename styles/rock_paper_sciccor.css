@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  background-color: bisque;
+}
+
+.container-fluid {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+.choices {
+  margin-bottom: 30px;
+}
+.choices .btn {
+  border-radius: 250px;
+  background-color: black;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#playerDisplay,
+#computerDisplay {
+  font-size: 2rem;
+}
+
+#resultDisplay {
+  font-size: 2rem;
+}
+
+.greenText,
+#playerScoreDisplay {
+  color: hsl(130, 84%, 54%);
+}
+
+.redText,
+#computerScoreDisplay {
+  color: hsl(0, 84%, 60%);
+}
+.btn-small {
+  width: auto;
+}
