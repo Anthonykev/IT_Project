@@ -4,7 +4,7 @@ $(document).ready(function () {
 });
 
 // Hier erstell ich den Array für die Auswahl
-const choices = ["rock", "paper", "scissors"];
+const choices = ["Stein", "Papier", "Schere"];
 const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
@@ -29,22 +29,31 @@ function playGame(playerChoice) {
   let result = "";
 
   if (
-    (playerChoice === "rock" && computerChoice === "rock") ||
-    (playerChoice === "paper" && computerChoice === "paper") ||
-    (playerChoice === "scissors" && computerChoice === "scissors")
+    (playerChoice === "Stein" && computerChoice === "Stein") ||
+    (playerChoice === "Papier" && computerChoice === "Papier") ||
+    (playerChoice === "Schere" && computerChoice === "Schere")
   ) {
-    result = "IT'S A TIE!";
+    result = "Unentschieden!😯";
   } else {
     switch (playerChoice) {
-      case "rock":
-        result = computerChoice === "scissors" ? "YOU WIN!" : "YOU LOSE!";
+      case "Stein":
+        result =
+          computerChoice === "Schere"
+            ? "Sie haben  Gewonnen!😁"
+            : "Sie haben  Verloren!😫";
         break;
-      case "paper":
-        result = computerChoice === "rock" ? "YOU WIN!" : "YOU LOSE!";
+      case "Papier":
+        result =
+          computerChoice === "Stein"
+            ? "Sie haben  Gewonnen!😁"
+            : "Sie haben  Verloren!😫";
         break;
 
-      case "scissors":
-        result = computerChoice === "paper" ? "YOU WIN!" : "YOU LOSE!";
+      case "Schere":
+        result =
+          computerChoice === "Papier"
+            ? "Sie haben  Gewonnen!😁"
+            : "Sie haben  Verloren!😫";
         break;
 
       default:
@@ -59,18 +68,18 @@ function playGame(playerChoice) {
   resultDisplay.classList.remove("greenText", "redText");
 
   switch (result) {
-    case "YOU WIN!":
+    case "Sie haben  Gewonnen!😁":
       resultDisplay.classList.add("greenText");
       playerScore++;
       playerScoreDisplay.textContent = playerScore;
       break;
-    case "YOU LOSE!":
+    case "Sie haben  Verloren!😫":
       resultDisplay.classList.add("redText");
       computerScore++;
       computerScoreDisplay.textContent = computerScore;
       break;
 
-    case "IT'S A TIE!":
+    case "Unentschieden!😯":
       drawScore++;
       drawScoreDisplay.textContent = drawScore;
 
@@ -78,3 +87,7 @@ function playGame(playerChoice) {
       break;
   }
 }
+
+document.getElementById("infos").addEventListener("click", function () {
+  window.location.href = "/pages/rock_paper_sciccor_information.html";
+});

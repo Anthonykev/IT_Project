@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   font-weight: bold;
-  background-color: bisque;
+  background-color: #8ab0ab;
 }
 
 .container-fluid {
@@ -13,7 +13,7 @@ body {
 }
 .choices .btn {
   border-radius: 250px;
-  background-color: rgb(195, 172, 172);
+  background-color: #3e505b;
   font-size: 3em;
   display: flex;
   justify-content: center;
@@ -30,13 +30,48 @@ body {
 
 .greenText,
 #playerScoreDisplay {
-  color: hsl(130, 84%, 54%);
+  color: hsl(130, 51%, 42%);
 }
 
 .redText,
 #computerScoreDisplay {
-  color: hsl(0, 84%, 60%);
+  color: hsl(0, 74%, 38%);
 }
 .btn-small {
   width: auto;
 }
+h1 {
+  color: #1a1d1a;
+}
+#infoButton {
+  background-color: #3e505b;
+  border-color: #3e505b;
+}
+
+.video-container {
+  max-width: 600px;
+  margin: auto;
+}
+.content-wrapper {
+  padding-top: 60px; /* Platz für Navbar */
+  padding-bottom: 40px; /* Platz für Footer */
+}
+
+.btn-custom {
+  background-color: #3e505b;
+  border-color: #3e505b;
+}
+.btn-custom:hover {
+  background-color: #354a52;
+  border-color: #354a52;
+}
+/*
+#8ab0ab
+#3e505b 
+#26413c
+#a2413c
+#1a1d1a
+#03120e
+
+
+*/
