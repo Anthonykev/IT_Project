@@ -19,8 +19,12 @@
     <link rel="stylesheet" href="/styles/rock_paper_sciccor.css" />
   </head>
   <body>
+     <!-- Navbar Container muss auf jede Seite hinzugefügt werden -->
+     <div id="navbar-container"></div>
+
+
     <div class="container-fluid">
-      <div class="row justify-content-center text-center mb-3">
+      <div class="row justify-content-center text-center mb-3 mt-5">
         <h1 id="title" > <strong>Schere - Stein - Papier </strong></h1>
       </div>
       <div class="choices">
@@ -88,10 +92,14 @@
     </div>
 
 
-
+<!-- jQuery-Bibliothek -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
-    <!-- jQuery-Bibliothek -->
+    
     <script src="/js/schere-stein-papier.js"></script>
+
+    <!-- Hier sind alle Javascript und jquery Einstellungen die für alle Seiten gilt. Sie muss auf jede Seite hinzugefügt werden-->
+<script src="/js/main.js"></script>
+
   </body>
 </html>
