@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Memory Game</title>
-    <link rel="stylesheet" href="../styles/styleMike.css">
+    <link rel="stylesheet" href="../styles/styleMike.css" />
     <!--Benötigt man für das Erstellen Lesen und Bearbeiten von ZIP Datein bindet HTML CSS und JS zu ZIP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
     <!--Diese Zeile speichert das ZIP das gebuendelt worden ist lokal-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar Container muss auf jede Seite hinzugefügt werden -->
     <div id="navbar-container"></div>
-    
+
     <div class="container">
-        <h2>Memory Spiel</h2>
-        <div class="player-info">
-            <p class="player-name">Spieler: </p>
-            <p class="rounds">Runden: 0</p>
+      <h2>Memory Spiel</h2>
+      <div class="player-info">
+        <p class="player-name">Spieler:</p>
+        <p class="rounds">Runden: 0</p>
+      </div>
+      <div class="game"></div>
+      <div class="button-container">
+        <button class="reset">Spiel Neustarten</button>
+        <button class="change-name">Namen ändern</button>
+        <br />
+        <button
+          class="information"
+          onclick="window.location.href='memoryInfo.html'"
+        >
+          information
+        </button>
+        <div class="download-zip">
+          <a
+            href="../Zip/memory-game.zip"
+            class="btn btn-primary btn-custom"
+            download
+            >ZIP runterladen</a
+          >
         </div>
-        <div class="game"></div>
-        <div class="button-container">
-            <button class="reset">Spiel Neustarten</button>
-            <button class="change-name">Namen ändern</button>
-            <br>
-            <button class="information" onclick="window.location.href='memoryInfo.html'">information</button>
-            <div class="download-zip">
-                <a href="../Zip/memory-game.zip" class="btn btn-primary btn-custom" download>ZIP runterladen</a>
-              </div>
-        </div>
+      </div>
     </div>
     <script src="../js/java.js"></script>
-</body>
+
+    <script src="../js/main.js"></script>
+  </body>
 </html>

@@ -4,9 +4,10 @@ body {
   background-color: #8ab0ab;
 }
 
-.container-fluid {
+.spiel {
   font-family: Arial, sans-serif;
   font-weight: bold;
+  max-width: 700px;
 }
 .choices {
   margin-bottom: 30px;
