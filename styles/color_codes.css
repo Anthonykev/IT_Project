@@ -1,0 +1,11 @@
+.color_codes {
+  width: 200px;
+  height: 200px;
+  box-sizing: content-box;
+}
+* {
+  text-align: center;
+}
+#buttonDiv {
+  margin: 1vh auto;
+}
