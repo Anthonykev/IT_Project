@@ -1,0 +1,41 @@
+.color_codes {
+  width: 200px;
+  height: 200px;
+  box-sizing: content-box;
+}
+* {
+  text-align: center;
+  margin: 0;
+}
+.game {
+  background-color: #26413c;
+  height: 96vh;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+}
+h2 {
+  color: #8ab0ab;
+}
+#buttonDiv {
+  margin: 1vh auto;
+}
+.information {
+  padding: 15px 20px;
+  color: #267c65;
+  background: white;
+  border: none;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  max-width: 200px; /* Optionale maximale Breite der Buttons */
+  box-sizing: border-box;
+  text-decoration: none;
+}
