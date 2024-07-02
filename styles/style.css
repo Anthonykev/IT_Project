@@ -1,6 +1,11 @@
+body {
+  background-color: #1a1d1a;
+  color: #8ab0ab;
+}
+
 .thumbnail {
   width: 100%;
-  height: 300px; /* Fixed height for all images */
+  height: auto; /* Fixed height for all images */
   object-fit: cover; /* Ensures images cover the div without stretching */
 }
 
