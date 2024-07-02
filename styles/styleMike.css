@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace; /*kann frei waehlbar sein*/
+  font-family: Arial, sans-serif; /*kann frei waehlbar sein*/
 }
 
 body {
@@ -17,7 +17,7 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  background-color: #0d614b;
+  background-color: #26413c;
   padding: 40px 60px;
 }
 
@@ -36,8 +36,8 @@ h2 {
   color: #267c65;
   background: white;
   border: none;
-  font-size: 1.5em;
-  letter-spacing: 0.1em;
+  font-size: 1.3rem;
+  letter-spacing: 0.08rem;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 600;
@@ -110,7 +110,7 @@ h2 {
 
 .memory-info-body {
   min-height: 100vh;
-  background: #26413c; /* Haupt-Hintergrundfarbe */
+  background: #0d614b; /* Haupt-Hintergrundfarbe */
   color: #ffffff; /* Standard-Textfarbe für bessere Lesbarkeit */
 }
 
@@ -126,7 +126,7 @@ h1 {
 
 .description-text {
   color: #8ab0ab; /* Helle Farbe für den Text */
-  font-family: monospace;
+  font-family: Arial, sans-serif;
 
   line-height: 1.6; /* Erhöhte Zeilenhöhe für bessere Lesbarkeit */
   margin-bottom: 20px; /* Abstand unterhalb des Textes */
@@ -169,4 +169,7 @@ h1 {
   background-color: #8ab0ab;
   border-color: #8ab0ab;
   color: #000000;
+}
+p {
+  color: #bddcd8;
 }
