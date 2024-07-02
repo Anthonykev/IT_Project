@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT Project</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,21 +16,108 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-      <!-- Navbar Container muss auf jede Seite hinzugefügt werden -->
-      <div id="navbar-container"></div>
+    <!-- Navbar Container muss auf jede Seite hinzugefügt werden -->
+    <div id="navbar-container"></div>
 
-    <div class="container mt-5">
+    <div class="container mt-5 color">
+      <div class="row"></div>
       <div class="row">
-       
+        <!-- Dein Inhalt hier -->
+        <div class="col-6 image-container">
+          <figure>
+            <h3>Memory Game</h3>
+            <a href="./pages/memory.html"
+              ><img
+                src="./img/memory.jpg"
+                alt="Memory"
+                class="thumbnail img-fluid"
+            /></a>
+            <figcaption class="figcaption">
+              Wusstest du? <br />Das Spiel Memory wurde 1959 von einem Schweizer
+              Schriftsteller und Spielentwickler namens William Hurter erfunden.
+              Es gilt heute als eines der besten Spiele zur Verbesserung des
+              Gedächtnisses und der Konzentrationsfähigkeit!"
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="col-6 image-container">
+          <figure>
+            <h3>Schere Stein Papier</h3>
+            <a href="./pages/rock_paper_sciccor.html"
+              ><img
+                src="./img/Schere_Stein_Papier.jpg"
+                alt="Schere Stein Papier"
+                class="thumbnail img-fluid"
+            /></a>
+            <figcaption class="figcaption">
+              Wusstest du? <br />
+              Schere, Stein, Papier hat seine Wurzeln im alten China und war
+              ursprünglich als 'Shoushiling' bekannt. Das Spiel wurde später in
+              Japan populär, wo es als 'Janken' bezeichnet wird, bevor es
+              weltweit bekannt wurde!"
+            </figcaption>
+          </figure>
+        </div>
+        <!-- das ist der div von Momo -->
+        <div class="col-6 image-container">
+          <figure>
+            <h3>Color Codes</h3>
+            <a href="./pages/color_codes.html"
+              ><img
+                src="./img/Color_Codes.jpg"
+                alt="Color"
+                class="thumbnail img-fluid"
+            /></a>
+            <figcaption class="figcaption">
+              Wusstest du? <br />"Color Code", auch bekannt als "Mastermind",
+              wurde 1970 von Mordecai Meirowitz, einem israelischen
+              Postangestellten, erfunden. Das Spiel wurde von vielen Verlagen
+              weltweit übernommen und ist heute ein Klassiker unter den Logik-
+              und Deduktionsspielen. Ein erstaunliches Detail ist, dass es über
+              5.755 mögliche Kombinationen gibt, um den Farbcode zu knacken, was
+              das Spiel zu einer echten Herausforderung für Denker und Strategen
+              macht!
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- das ist der div von raphael -->
+        <div class="col-6 image-container">
+          <figure>
+            <h3>Number Guessing</h3>
+            <a href="./pages/number_guessing.html"
+              ><img
+                src="./img/number_guessing.jpg"
+                alt="number_guessing"
+                class="thumbnail img-fluid"
+            /></a>
+            <figcaption class="figcaption">
+              Wusstest du? <br />Das Spiel Number Guessing hat eine
+              mathematische Basis in der Binären Suche, einem Algorithmus, der
+              oft in der Informatik verwendet wird. Wenn man die Strategie
+              optimal anwendet, kann man in einem Zahlenbereich von 1 bis 100
+              die richtige Zahl immer in maximal 7 Versuchen erraten. Dies liegt
+              daran, dass bei jedem Versuch die Hälfte der verbleibenden
+              Möglichkeiten ausgeschlossen wird, was die Anzahl der
+              verbleibenden möglichen Zahlen exponentiell reduziert!
+            </figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
-<!-- jQuery-Bibliothek -->
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
-  
+    <!-- jQuery-Bibliothek -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
 
-<!-- Hier sind alle Javascript und jquery Einstellungen die für alle Seiten gilt. Sie muss auf jede Seite hinzugefügt werden-->
-<script src="/js/main.js"></script>
+    <!-- Hier sind alle Javascript und jQuery Einstellungen die für alle Seiten gelten. Sie muss auf jede Seite hinzugefügt werden -->
+    <script src="/js/main.js"></script>
   </body>
 </html>

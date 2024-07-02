@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Information</title>
+    <title>Memory Info</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,9 +15,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/styles/rock_paper_sciccor.css" />
+    <link rel="stylesheet" href="../styles/styleMike.css" />
   </head>
-  <body>
+  <body class="memory-info-body">
     <!-- Navbar Container muss auf jede Seite hinzugefügt werden -->
     <div id="navbar-container"></div>
 
@@ -25,10 +25,10 @@
     <div class="container-fluid content-wrapper">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8">
-          <h1 class="text-center">Programmier Video</h1>
+          <h1 class="text-center">Memory Spiel Video</h1>
           <div class="ratio ratio-16x9 video-container">
             <iframe
-              src="https://www.youtube.com/embed/ZrKZJ4j4FvA?si=qxFmSytxoNgci2Y6"
+              src="https://www.youtube.com/embed/L07N93y7_38"
               title="YouTube video"
               allowfullscreen
             ></iframe>
@@ -39,23 +39,30 @@
         <div class="col-12 col-md-8">
           <h1 class="text-center">Beschreibung</h1>
           <p class="description-text">
-            Das Number Guessing Game ist ein interaktives Spiel, bei dem der
-            Benutzer aufgefordert wird, eine Zahl zwischen 1 und 100 zu erraten.
-            Der Benutzer hat 10 Versuche, um die richtige Zahl zu finden, und
-            erhält nach jedem Versuch Rückmeldungen, ob die geratene Zahl zu
-            hoch, zu niedrig oder korrekt ist. Bei einem erfolgreichen
-            Rateversuch oder wenn die Versuche aufgebraucht sind, kann das Spiel
-            neu gestartet werden. Die benutzerfreundliche Weboberfläche des
-            Spiels verwendet Bootstrap für das Styling und JavaScript für die
-            Spiellogik.
+            Dieses Projekt ist ein einfaches Memory-Spiel, das mit JavaScript,
+            HTML, CSS und Bootstrap entwickelt wurde. Es richtet sich an
+            Programmieranfänger, die das Programmieren lernen möchten. Das Spiel
+            ist bekannt und wird von Kindern auf der ganzen Welt gespielt.
           </p>
+          <p class="description-text">
+            In diesem Spiel muss der Spieler Paarungen von Karten finden, die
+            gleiche Emojis haben. Der Spieler kann eine Karte nach der anderen
+            aufdecken und versuchen, alle Paarungen zu finden.
+          </p>
+          <ul class="description-text">
+            <li>Finde alle passenden Paare</li>
+            <li>
+              Spiele gegen dich selbst und verbessere deine
+              Gedächtnisfähigkeiten
+            </li>
+          </ul>
           <p class="description-text">
             Das Video auf dieser Seite erklärt die Implementierung des Spiels
             und zeigt, wie es entwickelt wurde.
           </p>
           <div class="download-button">
             <a
-              href="/zip/number_guessing.zip"
+              href="../Zip/memory-game.zip"
               class="btn btn-primary btn-custom"
               download
               >Code als ZIP-Datei herunterladen</a
@@ -70,8 +77,8 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
-    <script src="/js/schere-stein-papier.js"></script>
-    <!-- Hier sind alle Javascript und jquery Einstellungen die für alle Seiten gilt. Sie muss auf jede Seite hinzugefügt werden-->
+    <script src="/js/memory.js"></script>
+    <!-- Hier sind alle script und jQuery-Einstellungen, die für alle Seiten gelten. Sie müssen auf jede Seite hinzugefügt werden-->
     <script src="/js/main.js"></script>
   </body>
 </html>
