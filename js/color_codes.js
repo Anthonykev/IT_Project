@@ -6,7 +6,7 @@ const answer = document.getElementById("answer");
 const buttonDiv = document.getElementById("buttonDiv");
 
 const button = document.createElement("button");
-button.innerText = "Play Aigan!";
+button.innerText = "Play Again!";
 
 let randomColor = generateColor();
 colorHex.innerText = randomColor;
