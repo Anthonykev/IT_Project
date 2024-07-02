@@ -1,172 +1,172 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: monospace; /*kann frei waehlbar sein*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace; /*kann frei waehlbar sein*/
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #26413C;
+  min-height: 100vh;
+  background: #26413c;
 }
 
 .container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    background-color: #0d614b;
-    padding: 40px 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #0d614b;
+  padding: 40px 60px;
 }
 
 h2 {
-    font-size: 3em;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+  font-size: 3em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-.reset, .change-name, .information, .btn-custom {
-    padding: 15px 20px;
-    color: #267c65;
-    background: white;
-    border: none;
-    font-size: 1.5em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-weight: 600;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    max-width: 200px; /* Optionale maximale Breite der Buttons */
-    box-sizing: border-box;
-    text-decoration: none; /* Verhindert Unterstreichung bei Links */
+.reset,
+.change-name,
+.information,
+.btn-custom {
+  padding: 15px 20px;
+  color: #267c65;
+  background: white;
+  border: none;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  max-width: 200px; /* Optionale maximale Breite der Buttons */
+  box-sizing: border-box;
+  text-decoration: none; /* Verhindert Unterstreichung bei Links */
 }
 
-
-.reset:focus, .change-name:focus, .information:focus, .download-zip:focus {
-    color: white;
-    background: #267c65;
+.reset:focus,
+.change-name:focus,
+.information:focus,
+.download-zip:focus {
+  color: white;
+  background: #267c65;
 }
 
 .game {
-    width: 430px; 
-    height: 430px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    transform-style: preserve-3d;
-    perspective: 500px;
+  width: 430px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  transform-style: preserve-3d;
+  perspective: 500px;
 }
 
 .item {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    background: white;
-    transform: rotateY(180deg);
-    transition: 0.25s;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  background: white;
+  transform: rotateY(180deg);
+  transition: 0.25s;
 }
 
 .item.boxOpen {
-    transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 .item::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: #209d7b;
-    transition: 0.25s;
-    transform: rotateY(0deg);
-    backface-visibility: hidden;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #209d7b;
+  transition: 0.25s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
 }
 
-.boxOpen:after, .boxMatch:after {
-    transform: rotateY(180deg);
+.boxOpen:after,
+.boxMatch:after {
+  transform: rotateY(180deg);
 }
 
 .button-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /* Abstand zwischen den Buttons */
-    justify-content: center; /* Zentriert die Buttons horizontal */
-    margin-top: 20px; /* Abstand nach oben */
-    width: 100%; /* Gesamtbreite des Containers */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Abstand zwischen den Buttons */
+  justify-content: center; /* Zentriert die Buttons horizontal */
+  margin-top: 20px; /* Abstand nach oben */
+  width: 100%; /* Gesamtbreite des Containers */
 }
 
 .memory-info-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #26413C; /* Haupt-Hintergrundfarbe */
-    color: #FFFFFF; /* Standard-Textfarbe für bessere Lesbarkeit */
+  min-height: 100vh;
+  background: #26413c; /* Haupt-Hintergrundfarbe */
+  color: #ffffff; /* Standard-Textfarbe für bessere Lesbarkeit */
 }
 
 .content-wrapper {
-    background-color: #1A1D1A; /* Dunkler Hintergrund für den Inhalt */
-    padding: 40px;
-    border-radius: 10px;
+  background-color: #1a1d1a; /* Dunkler Hintergrund für den Inhalt */
+  padding: 40px;
+  border-radius: 10px;
 }
 
 h1 {
-    color: #8AB0AB; /* Helle Farbe für Überschriften */
+  color: #8ab0ab; /* Helle Farbe für Überschriften */
 }
 
 .description-text {
-    color: #8AB0AB; /* Helle Farbe für den Text */
-    font-family: monospace;
-    
-    line-height: 1.6; /* Erhöhte Zeilenhöhe für bessere Lesbarkeit */
-    margin-bottom: 20px; /* Abstand unterhalb des Textes */
-    font-size: 1.1em; /* Größere Textgröße */
+  color: #8ab0ab; /* Helle Farbe für den Text */
+  font-family: monospace;
+
+  line-height: 1.6; /* Erhöhte Zeilenhöhe für bessere Lesbarkeit */
+  margin-bottom: 20px; /* Abstand unterhalb des Textes */
+  font-size: 1.1em; /* Größere Textgröße */
 }
 
 .btn-custom {
-    background-color: #3E505B; /* Button-Farbe */
-    border-color: #3E505B;
-    color: #FFFFFF;
+  background-color: #3e505b; /* Button-Farbe */
+  border-color: #3e505b;
+  color: #ffffff;
 }
 
 .btn-custom:hover {
-    background-color: #8AB0AB;
-    border-color: #8AB0AB;
-    color: #000000;
+  background-color: #8ab0ab;
+  border-color: #8ab0ab;
+  color: #000000;
 }
 
 .video-container iframe {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 /* Optional: Zusätzliche Stile für den Download-Button */
 .download-button a {
-    background-color: #3E505B;
-    border-color: #3E505B;
-    color: #FFFFFF;
-    padding: 15px 20px;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    max-width: 300px;
-    margin-top: 20px;
-    border-radius: 5px;
+  background-color: #3e505b;
+  border-color: #3e505b;
+  color: #ffffff;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+  border-radius: 5px;
 }
 
 .download-button a:hover {
-    background-color: #8AB0AB;
-    border-color: #8AB0AB;
-    color: #000000;
+  background-color: #8ab0ab;
+  border-color: #8ab0ab;
+  color: #000000;
 }
