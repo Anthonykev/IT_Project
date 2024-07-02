@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Memory Game</title>
     <link rel="stylesheet" href="../styles/styleMike.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <!--Benötigt man für das Erstellen Lesen und Bearbeiten von ZIP Datein bindet HTML CSS und JS zu ZIP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <!--Diese Zeile speichert das ZIP das gebuendelt worden ist lokal-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
   </head>
   <body>
     <!-- Navbar Container muss auf jede Seite hinzugefügt werden -->
@@ -43,22 +41,12 @@
         </div>
       </div>
     </div>
-    <script src="../js/memory.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.js"
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
-
-    <script src="../js/main.js"></script>
-    <!--Benötigt man für das Erstellen Lesen und Bearbeiten von ZIP Datein bindet HTML CSS und JS zu ZIP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
-    <!--Diese Zeile speichert das ZIP das gebuendelt worden ist lokal-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="../js/memory.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

@@ -1,12 +1,15 @@
 body {
   font-family: Arial, sans-serif;
   font-weight: bold;
-  background-color: #8ab0ab;
+  /* background-color: #8ab0ab; */
+  background-color: #26413c;
+  color: #bddcd8;
 }
 
-.container-fluid {
+.spiel {
   font-family: Arial, sans-serif;
   font-weight: bold;
+  max-width: 700px;
 }
 .choices {
   margin-bottom: 30px;
@@ -35,13 +38,13 @@ body {
 
 .redText,
 #computerScoreDisplay {
-  color: hsl(0, 74%, 38%);
+  color: hsl(0, 83%, 44%);
 }
 .btn-small {
   width: auto;
 }
 h1 {
-  color: #1a1d1a;
+  color: #bddcd8;
 }
 #infoButton {
   background-color: #3e505b;
